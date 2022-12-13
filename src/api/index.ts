@@ -8,7 +8,7 @@ const JSPLACEHOLDER = 'https://jsonplaceholder.typicode.com/comments';
 const BASE = 'https://api.json-generator.com/templates/YfDjINErULeA/data';
 
 const fetchData: GetDataType = async () => {
-  const res = await fetch(JSPLACEHOLDER, {
+  const res = await fetch(BASE, {
     headers: new Headers({
       Authorization: AUTH_KEY,
     }),
