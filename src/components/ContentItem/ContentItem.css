@@ -1,0 +1,99 @@
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 95%;
+  padding: 10px 15px;
+  max-height: 400px;
+  background: lightgray;
+  border-radius: 8px;
+}
+
+.contentItem fieldset {
+  border: 0;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contentItemData h2 {
+  padding: 15px 0;
+}
+
+.contentItem fieldset label,
+.contentItem h3 {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  min-width: 15%;
+  display: inline-block;
+}
+
+.contentItem input,
+.contentItem textarea {
+  border: 0;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.contentItem input:read-only,
+.contentItem textarea:read-only {
+  background-color: lightgray;
+}
+
+.contentItem input:read-only:focus,
+.contentItem textarea:read-only:focus {
+  border: 0;
+}
+
+.itemArray {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.itemArray p > input:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.contentItemChangeForm {
+  margin-top: 20px;
+}
+
+.contentItemChangeForm .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  color: aliceblue;
+}
+
+.contentItemChangeForm .btn:disabled,
+.contentItemChangeForm .btn:disabled:hover {
+  color: lightslategray;
+}
+
+.btn.btnChange {
+  background: rgb(0, 0, 255);
+}
+
+.btn.btnChange:hover {
+  background: rgba(0, 0, 255, 0.478);
+}
+
+.btn.btnChange:disabled {
+  background: lightblue;
+}
+
+.btn.btnSave {
+  background: green;
+}
+
+.btn.btnSave:hover,
+.btn.btnSave:disabled {
+  background: lightseagreen;
+}
